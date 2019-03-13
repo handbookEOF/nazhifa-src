@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<style type="text/css" media="screen">
+  .four-o {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container four-o">
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-12 col-sm-10">
+      {% if jekyll.environment == "production" %}
+          <img class="img-fluid mx-auto my-4" src="/nazhifa/assets/images/dew-bw.png"/>
+      {% else %}
+          <img class="img-fluid mx-auto my-4" src="/assets/images/dew-bw.png"/>
+      {% endif %}
+      <h1>404</h1>
+
+      <p><strong>Page not found :(</strong></p>
+      <p>The requested page could not be found.</p>
+
+     
+    </div>
+  </div>
+</div>

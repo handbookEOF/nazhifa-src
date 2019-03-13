@@ -1,0 +1,4 @@
+---
+fixname: islam
+name: Islam
+---

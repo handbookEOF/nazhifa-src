@@ -1,0 +1,16 @@
+- name: Home
+  link: /
+- name: Sources
+  link: /sources/index.html
+- name: Lessons
+  link: /lessons/index.html
+- name: Blog
+  link: /blog.html
+- name: Search
+  link: /search
+- name: About
+  link: /about.html
+- name: Download
+  link: /download.html
+- name: Shop
+  link: /shop.html

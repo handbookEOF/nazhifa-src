@@ -1,0 +1,19 @@
+---
+layout: blog
+---
+
+<h1>{{ page.name }}</h1>
+
+{{ content }}
+
+<h2>Posts</h2>
+<ul>
+  {% assign filtered_posts = site.posts | where: 'labels', page.fixname %}
+  {% for post in filtered_posts %}
+    {% if jekyll.environment == "production" %}
+      <li><a href="/nazhifa{{ post.url }}">{{ post.title }}</a></li>
+    {% else %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>

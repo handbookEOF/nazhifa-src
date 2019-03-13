@@ -1,0 +1,29 @@
+---
+layout: blog
+---
+
+<div id="nazhifasPost">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.date | date_to_string }} -</p>
+    
+    {{ content }}
+    
+    <nav class="codrops-demos text-right">
+        {% assign category = site.categories %}
+    
+        {% assign j = page.labels | size | minus: 1 %}
+        {% assign l = site.categories | size | minus: 1 %}
+        {% assign i = 0 %}
+        {% for i in (0..j) %}
+            {% for k in (0..l) %}
+                {% if category[i].fixname == page.labels[k] %}
+                    {% if jekyll.environment == "production" %}
+                        <a href="/nazhifa{{ category[i].url }}">{{ category[i].name }}</a>
+                    {% else %}
+                        <a href="{{ category[i].url }}">{{ category[i].name }}</a>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </nav>
+</div>

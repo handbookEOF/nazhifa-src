@@ -1,0 +1,83 @@
+<div id="headAccountBar" class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-12 col-sm-10">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul id="headNav" class="navbar-nav mr-auto">
+							{% if jekyll.environment == "production" %}
+								{% for item in site.data.navigation %}
+								{% if page.url == item.link %}
+								<li class="nav-item active">
+									<a class="nav-link" href="{{ item.link }}" >
+										{{ item.name }}
+									</a>
+								</li>
+								{% else %}
+									<li class="nav-item">
+										<a class="nav-link" href="{{ item.link }}" >
+											{{ item.name }}
+										</a>
+									</li>
+								{% endif %}
+								{% endfor %}
+							{% else %}
+								{% for item in site.data.navigation-dev %}
+								{% if page.url == item.link %}
+								<li class="nav-item active">
+									<a class="nav-link" href="{{ item.link }}" >
+										{{ item.name }}
+									</a>
+								</li>
+								{% else %}
+									<li class="nav-item">
+										<a class="nav-link" href="{{ item.link }}" >
+											{{ item.name }}
+										</a>
+									</li>
+								{% endif %}
+								{% endfor %}
+							{% endif %}
+							<!-- li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Projects
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								{% if jekyll.environment == "production" %}
+									{% for item in site.data.project %}
+										<a class="dropdown-item" href="{{ item.link }}">{{ item.name }}</a>
+									{% endfor %}
+								{% else %}
+									{% for item in site.data.project-dev %}
+										<a class="dropdown-item" href="{{ item.link }}">{{ item.name }}</a>
+									{% endfor %}
+								{% endif %}
+								</div>
+							</li -->
+						</ul>
+						<ul id="headAccounts" class="navbar-nav">
+							<!-- li class="nav-item">
+								<a class="nav-link active" href="#"><i class="fab fa-facebook"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+							</li -->
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.instagram.com/toko.nazhifa/" target="_blank"><i class="fab fa-instagram"></i></a>
+							</li>
+							<!-- li class="nav-item">
+								<a class="nav-link" href="#"><i class="fab fa-github-square"></i></a>
+							</li -->
+						</ul>
+					</div>
+				</nav>
+
+			</div>
+		</div>
+	</div>
+</div>
+
