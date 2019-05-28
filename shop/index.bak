@@ -1,0 +1,141 @@
+---
+layout: headed
+title: Toko
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-12 col-sm-10 px-sm-5">
+            <p>Sementara kami tidak menyediakan baik pelayanan maupun tampilan produk melalui situs. Silahkan kunjungi toko kami pada platform berikut atau lihat halaman <a href="{% if jekyll.environment == 'production' %}{% endif %}/shop/order.html">pemesanan</a>.</p>
+        </div>
+    </div>
+    <div class="row">
+        <ul class="list-inline mx-auto">
+            <li class="list-inline-item">
+                <a class="nav-link active" href="#"><img class="market-icon" src="/assets/images/bukalapak.png"/></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="nav-link" href="#"><img class="market-icon" src="/assets/images/tokopedia.png"/></a>
+            </li>
+            <li class="list-inline-item">
+                <a class="nav-link" href="https://www.instagram.com/toko.nazhifa/" target="_blank"><img class="market-icon" src="/assets/images/instagram.png"/></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="w3Product">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div id="Product" class="col-12 col-sm-10 px-sm-5">
+                <div class="row">
+                    <div class="col-4 col-sm-4">
+                        <div class="card hover-shadow">
+                            <img src="/assets/images/products/ALK001.png" alt="Mountains" style="width:100%"><!-- placeholder 800x640 -->
+                            <div class="card-container">
+                                <h2 onclick="openModal();currentSlide(1)" class="cursor">Tailored Jeans</h2>
+                                <p class="price">$19.99</p>
+                                <p>Some text about the jeans..</p> <!--  ada minimal dan maksimal jumlah kata 100 s/d 200 -->
+                                <p><button>Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <div class="card hover-shadow">
+                            <img src="/assets/images/products/ATZ001.png" alt="Mountains" style="width:100%">
+                            <div class="card-container">
+                                <h2 onclick="openModal();currentSlide(2)" class="cursor">Tailored Jeans</h2>
+                                <p class="price">$19.99</p>
+                                <p>Some text about the jeans..Some text about the jeans..Some text about the jeans..Some text about the jeans..</p>
+                                <p><button>Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <div class="card hover-shadow">
+                            <img src="/assets/images/products/UQR001.png" alt="Mountains" style="width:100%">
+                            <div class="card-container">
+                                <h2 onclick="openModal();currentSlide(3)" class="cursor">Tailored Jeans</h2>
+                                <p class="price">$19.99</p>
+                                <p>Some text about the jeans..Some text about the jeans..Some text about the jeans..Some text about the jeans..</p>
+                                <p><button>Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <div class="card hover-shadow">
+                            <img src="/assets/images/products/PKT001.png" alt="Mountains" style="width:100%">
+                            <div class="card-container">
+                                <h2>Tailored Jeans</h2>
+                                <p class="price">$19.99</p>
+                                <p>Some text about the jeans..Some text about the jeans..Some text about the jeans..Some text about the jeans..</p>
+                                <p><button>Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <div class="card hover-shadow">
+                            <img src="/assets/images/products/PKT002.png" alt="Mountains" style="width:100%">
+                            <div class="card-container">
+                                <h2>Tailored Jeans</h2>
+                                <p class="price">$19.99</p>
+                                <p>Some text about the jeans..Some text about the jeans..Some text about the jeans..Some text about the jeans..</p>
+                                <p><button>Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <div class="card hover-shadow">
+                            <img src="/assets/images/products/PKT003.png" alt="Mountains" style="width:100%">
+                            <div class="card-container">
+                                <h2>Tailored Jeans</h2>
+                                <p class="price">$19.99</p>
+                                <p>Some text about the jeans..Some text about the jeans..Some text about the jeans..Some text about the jeans..</p>
+                                <p><button>Add to Cart</button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img class="w3-lightbox-img" src="/assets/images/products/ALK001.png" style="width:100%" alt="Some text about the jeans..Some text about the jeans..Some text about the jeans..Some text about the jeans..Some text about the jeans..Some text about the jeans..Some text about the jeans..Some text about the jeans..">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img class="w3-lightbox-img" src="/assets/images/products/ATZ001.png" style="width:100%" alt="test">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img class="w3-lightbox-img" src="/assets/images/products/UQR001.png" style="width:100%" alt="Some text about the jeans..Some text about the jeans..Some text about the jeans..Some text about the jeans..">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/w3Product.js"></script>
+</div>
+
+<!-- script>
+    $('#buku-islam').pagination({
+        dataSource: [1, 2, 3, 4, 5, 6, 7, ... , 195],
+        callback: function(data, pagination) {
+            // template method of yourself
+            var html = template(data);
+            dataContainer.html(html);
+        }
+    })
+</script -->
+
+

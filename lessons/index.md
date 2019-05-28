@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: basic
 title: Pelajaran - Jelajahi skema bidang yang ingin Anda pelajari!
 ---
 

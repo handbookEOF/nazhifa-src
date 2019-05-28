@@ -13,20 +13,11 @@ title: Sumber - Sumber daya gratis pilihan untuk Anda
 				var jsonPath = "{% if jekyll.environment == 'production' %}/nazhifa{% endif %}/assets/js/linkBase.json";
                 init(jsonPath);
             </script>
-            <div class="w-100"></div>
-            <div class='nazhifa-table' id="islam">
+            <div id="tableDrop" class="dropdown">
             </div>
-            <div class="w-100"></div>
-            <br/><br/>
-            <div class='nazhifa-table' id="downloadable">
-            </div>    
-            <div class="w-100"></div>
-            <br/><br/>
-            <div class='nazhifa-table' id="read">
-            </div>
-            <div class="w-100"></div>
-            <br/><br/>
-            <div class='nazhifa-table' id="academic">
+            <!-- div class="w-100"></div -->
+            <div id="TableSource">
+            <br/>
             </div>
         </div>
     </div>

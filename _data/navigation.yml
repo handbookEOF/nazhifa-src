@@ -1,9 +1,9 @@
 - name: Home
   link: /nazhifa
+- name: Shop
+  link: /nazhifa/shop/
 - name: Sources
   link: /nazhifa/sources/index.html
-- name: Lessons
-  link: /nazhifa/lessons/index.html
 - name: Blog
   link: /nazhifa/blog.html
 - name: Search
@@ -12,5 +12,4 @@
   link: /nazhifa/about.html
 - name: Download
   link: /nazhifa/download.html
-- name: Shop
-  link: /nazhifa/shop.html
+
