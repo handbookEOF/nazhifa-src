@@ -81,6 +81,31 @@
 						resultdiv.append(searchitem);
 					}
 				});
+				/*
+				$('input#searchSources').on('keyup', function () { // Ganti ke press enter dan result di modal
+					var resultdiv = $('#results');
+					
+					// Tambahin baris untuk manggil modal
+					
+					// Get query
+					var query = $(this).val();
+					
+					// Search for it
+					var result = idx.search(query);
+					
+					// Show results
+					resultdiv.empty();
+					
+					// Add status
+					resultdiv.prepend('<p class="mt-3">Found '+result.length+' result(s)</p>');
+
+					for (var item in result) {
+						var ref = result[item].ref;
+						var searchitem = '<div class="nazhifaSearchResult"><h3><a href="'+store[ref].link+'" class="">'+store[ref].title+'</a></h3><div class="small">'+store[ref].date+'</div><p>'+store[ref].excerpt+'</p></div>';
+						resultdiv.append(searchitem);
+					}
+				});
+				*/
 				
 			});
 		</script>
