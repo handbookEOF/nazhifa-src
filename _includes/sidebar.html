@@ -1,80 +1,16 @@
-<div id="aside">
-    <div id="aside-head">
-        <div id="aside-head-content"><h5>Category</h5></div>
-        <!-- form method="get" action="/search/">
-        <fieldset>
-            <legend>Site Search</legend>
-            <label for="search-site">Search</label>
-            <input type="text" id="search-site" name="keywords" placeholder="Search..."/>
-        </fieldset>
-        </form-->
-    </div>
-    <div id="aside-content">
-        <div class="sub">
-        <h3>About this site</h3>
-        <!-- div class="sub-content">
-            <p><a href="/">Legend of Mana Info</a> strives to be the ultimate resource for all things related to the deep world of Legend of Mana. Contained within these pages is all of the knowledge I've attained throughout the many years I've played this satisfying <acronym title="Role Playing Game">RPG</acronym>. Enjoy!</p>
-        </div>
-        </div -->
-        <div class="sub">
-        <h3>Walkthrough</h3>
-        <div class="sub-content">
-            <div class="row">
-            <div class="col-xs-6">
-                <ul>
-                {% for category in site.categories %}
-                    {% if jekyll.environment == "production" %}
-                        <li><a href="/nazhifa{{ category.url }}">{{ category.name }}</a></li>
-                    {% else %}
-                        <li><a href="{{ category.url }}">{{ category.name }}</a></li>
-                    {% endif %}
-                {% endfor %}
-                </ul>
-            </div>
-            <div class="col-xs-6">
-                <ul>
-                <li>
-                    <a href="/walkthrough/events/">Event List</a>
-                </li>
-                <li>
-                    <a href="/walkthrough/maps/">Maps &amp; Artifacts</a>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </div>
-        </div>
-        <div class="sub">
-        <h3>Encyclopedias</h3>
-        <div class="sub-content">
-            <div class="row">
-                <div class="col-md-6">
-                    <ul>
-                    <li>
-                        <a href="/encyclopedias/monsters-pets/">Monsters/Pets</a>
-                    </li>
-                    <li>
-                        <a href="/encyclopedias/abilities-techniques/">Abilities/Techs</a>
-                    </li>
-                    <li>
-                        <a href="/encyclopedias/npcs/">NPC's</a>
-                    </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul>
-                        <li>
-                            <a href="/encyclopedias/produce/">Produce</a>
-                        </li>
-                        <li>
-                            <a href="/encyclopedias/shops/">Shop Info</a>
-                        </li>
-                        <li>
-                            <a href="/encyclopedias/recipes/">Recipes</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<aside id="asideCategory">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-xs-12">
+            <h5 class="text-right font-weight-bold pb-2 border-bottom">Category</h5>
+            <ul class="list-unstyled text-right">
+            {% for category in site.categories %}
+                {% if jekyll.environment == "production" %}
+                    <li><a href="/nazhifa{{ category.url }}">{{ category.name }}</a></li>
+                {% else %}
+                    <li><a href="{{ category.url }}">{{ category.name }}</a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
         </div>
     </div>
-</div>
+</aside>

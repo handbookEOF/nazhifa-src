@@ -1,8 +1,71 @@
-<div class="container">
-	<div class="row">
-		<div class="col-1 col-sm-1"></div>
-		<div class="col-10 col-sm-10">
-			<p class="text-center">&copy; 2018</p><!-- a href="https://twitter.com/handbookeof" target="_blank">@handbookeof</a -->
+<div class="container-fluid mb-2 mb-sm-2">
+</div>
+<div class="container-fluid mb-2 mb-sm-2">
+</div>
+<div class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-1 col-sm-1"></div>
+			<div class="col-5 col-sm-5 p-5 p-sm-5">
+				<ul id="footerNav" class="list-unstyled">
+					{% if jekyll.environment == "production" %}
+						{% for item in site.data.navigation %}
+							{% if page.url == item.link %}
+							<li class=" ">
+								<a class="" href="{{ item.link }}" >
+									{{ item.name }}
+								</a>
+							</li>
+							{% else %}
+								<li class="">
+									<a class="nav-link" href="{{ item.link }}" >
+										{{ item.name }}
+									</a>
+								</li>
+							{% endif %}
+						{% endfor %}
+					{% else %}
+						{% for item in site.data.navigation-dev %}
+							{% if page.url == item.link %}
+							<li class=" ">
+								<a class="nav-link" href="{{ item.link }}" >
+									{{ item.name }}
+								</a>
+							</li>
+							{% else %}
+								<li class="">
+									<a class="nav-link" href="{{ item.link }}" >
+										{{ item.name }}
+									</a>
+								</li>
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+				</ul>
+			</div>
+			<div class="col-5 col-sm-5 p-5 p-sm-5 text-right">
+				<div class="row">
+					<div class="col-12 col-sm-12">
+						<!-- img src="/assets/images/egg-of-dino.png" class="rounded mb-5 mx-auto d-block" width="150px" alt="..."/-->
+						<p class="text-justify">Nazhifa adalah situs yang menyediakan berbagai informasi terkait referensi dan resource mengenal berbagai bidang keilmuan secara gratis. Misi utama kami adalah menyebarkan budaya berbagi dan mencerdaskan sesama. Berbagai tautan yang tersedia di situs ini kami himpun berdasarkan hasil temuan pribadi dan juga rekomendasi dari rekan-rekan Nazhifa yang murah hati untuk berbagi.
+						Pembaca sekalian diperkenankan membagi dan menyebarluaskan sebagian atau seluruh tautan Nazhifa kepada publik. Selain itu, Nazhifa juga membuka pintu yang seluas-luasnya bagi pembaca yang ingin berkontribusi.
+						Akhir kata, selamat membaca, semangat cerdas bersama!</p>
+					</div>
+					<div class="col-12 col-sm-12 text-center">
+						<ul id="Contact" class="list-inline list-unstyled">
+							<li class="py-3 py-sm-3 list-inline-item"><a class="" href="https://www.tokopedia.com/nazhifaonline"> &nbsp; &nbsp; &nbsp;<img class="market-icon" src="{% if jekyll.environment == 'production' %}/nazhifa{% endif %}/assets/images/tokopedia.png"/></a></li>
+							<li class="py-3 py-sm-3 list-inline-item"><a class="" href="https://www.instagram.com/toko.nazhifa/" target="_blank"> &nbsp; &nbsp; &nbsp;<img class="market-icon" src="{% if jekyll.environment == 'production' %}/nazhifa{% endif %}/assets/images/instagram.png"/></a></li>
+							<li class="py-3 py-sm-3 list-inline-item"><a class="active" href="https://www.bukalapak.com/u/fachri_san"> &nbsp; &nbsp; &nbsp;<img class="market-icon" src="{% if jekyll.environment == 'production' %}/nazhifa{% endif %}/assets/images/bukalapak.png"/></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 col-sm-1"></div>
+			<div class="col-10 col-sm-10">
+				<p class="text-center">&copy; 2018 Nazhifa</p><!-- a href="https://twitter.com/handbookeof" target="_blank">@handbookeof</a -->
+			</div>
 		</div>
 	</div>
 </div>

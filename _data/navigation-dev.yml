@@ -1,5 +1,7 @@
 - name: Home
   link: /
+- name: Shop
+  link: /shop/
 - name: Sources
   link: /sources/index.html
 - name: Lessons
@@ -12,5 +14,4 @@
   link: /about.html
 - name: Download
   link: /download.html
-- name: Shop
-  link: /shop.html
+
